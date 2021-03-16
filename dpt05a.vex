@@ -62,7 +62,7 @@ def pulsar.21cm;
      ref $PROCEDURES = Mode_01;
      ref $FREQ = 1344.00MHz4x32MHz:Ho;
      ref $FREQ = 1344.00MHz8x16MHz:Cd;
-     ref $IF = LO@1800MHzDPolNoTone:Ho;
+     ref $IF = LO@1100MHzDPolNoTone:Ho;
      ref $IF = LO@2100MHzDPolNoTone:Cd;
      ref $BBC = 4BBCs:Ho;
      ref $BBC = 8BBCs:Cd;
@@ -332,10 +332,10 @@ def LO@2100MHzDPolNoTone;
      if_def = &IF_B1 : B1 : L :  2100.00 MHz : L ; * PCall off!   0.0   0.0  NA     0 NA
 enddef;
 *
-def LO@1800MHzDPolNoTone;
+def LO@1100MHzDPolNoTone;
 * mode =  1    stations =Ho
-     if_def = &IF_2N : 2N : R :  1800.00 MHz : L ; * PCall off!   0.0   0.0  NA     0 NA
-     if_def = &IF_1N : 1N : L :  1800.00 MHz : L ; * PCall off!   0.0   0.0  NA     0 NA
+     if_def = &IF_2N : 2N : R :  1100.00 MHz : U ; * PCall off!   0.0   0.0  NA     0 NA
+     if_def = &IF_1N : 1N : L :  1100.00 MHz : U ; * PCall off!   0.0   0.0  NA     0 NA
 enddef;
 *------------------------------------------------------------------------------
 $BBC;
